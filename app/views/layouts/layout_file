@@ -10,5 +10,9 @@
 
   <body>
     <%= yield %>
+    <p>Index</p>
+     <li><a href="/static_pages/about"> ABOUT </a></li>
+     <li><a href="/static_pages/home"> HOME </a></li>
+     <li><a href="/static_pages/help"> HELP </a></li>
   </body>
 </html>
