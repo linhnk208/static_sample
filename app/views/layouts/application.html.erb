@@ -1,18 +1,15 @@
-<title><%= yield(:title) %> | Ruby on Rails Tutorial Sample App</title>
-
 <!DOCTYPE html>
 <html>
   <head>
-    <title><%= yield(:title) %> | Ruby on Rails Tutorial Sample App</title>
+    <title><%= full_title(yield(:title)) %></title>
     <%= csrf_meta_tags %>
-
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
   <body>
     <%= yield %>
-    <p>Index</p>
+    <h2><p>Index</p></h2>
      <li><a href="/static_pages/about"> ABOUT </a></li>
      <li><a href="/static_pages/home"> HOME </a></li>
      <li><a href="/static_pages/help"> HELP </a></li>
